@@ -1,0 +1,621 @@
+/* GÉNÉRAL \\ styles sur les balises */
+
+body {
+    padding: 20px 2%;
+}
+
+header {
+    display: flex;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+table{
+    margin-top: 22vh;
+    margin-bottom: 320px;
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th{
+    width: 8.3%;
+    font-family: sans-serif;
+    position: relative;
+    left: -10px;
+}
+
+ul {
+    font-family: sans-serif;
+    list-style: none;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+}
+
+footer {
+    position: absolute;
+    left: 0px;
+    padding: 10px 2%;
+    width: 100%;
+    background: #eee;
+}
+
+/* --------------------------------- */
+
+.logo {
+    width: 30%;
+}
+
+.click{
+    flex-direction: column;
+    font-family: sans-serif;
+    color: lightgrey;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.clickline1 {
+    font-size: 41px;
+}
+
+.click span{
+    display: block;
+}
+
+.sem {
+    color: grey;
+}
+
+.infoline{
+    display: flex;
+}
+
+.left_febline{
+    border-left: 1px solid #006881;
+    border-top: 2px solid #006881;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_febline{
+    border-right: 1px solid #006881;
+    border-top: 2px solid #006881;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.left_junline{
+    border-left: 1px solid #fab414;
+    border-top: 2px solid #fab414;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_junline{
+    border-right: 1px solid #fab414;
+    border-top: 2px solid #fab414;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.left_sepline{
+    border-left: 1px solid #E81001;
+    border-top: 2px solid #E81001;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_sepline{
+    border-right: 1px solid #E81001;
+    border-top: 2px solid #E81001;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.arrow {
+    border: 3px solid white;
+    height: 40px;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease-in-out;
+    position: relative;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.arrow_hover_js {
+    transform: scale(1.2);
+}
+
+.arrow:hover .circle {
+    background-color: white;
+}
+
+.arrow:hover .number{
+    display: block;
+    animation-duration: 1s;
+    animation-name: numberflash;
+    animation-iteration-count: infinite;
+}
+
+.arrow:active {
+    transform: scale(1.2);
+}
+
+@keyframes numberflash {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    50% {opacity: 0;}
+    80% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+.txtmonth {
+    font-size: 26px;
+}
+
+.e3 {
+    font-size: 32px;
+}
+
+.jantxt {
+    color: #006FC1;
+}
+
+.febtxt {
+    color: #006881;
+}
+
+.martxt {
+    color: #385F02;
+}
+
+.aprtxt {
+    color: #748A01;
+}
+
+.maytxt {
+    color: #B1B403;
+}
+
+.juntxt {
+    color: #fab414;
+}
+
+.jultxt {
+    color: #FA9E0D;
+}
+
+.augtxt {
+    color: #FC7A02;
+}
+
+.septxt {
+    color: #E81001;
+}
+
+.octtxt {
+    color: #B60300;
+}
+
+.novtxt {
+    color: #C00074;
+}
+
+.dectxt {
+    color: #6F3896;
+}
+
+.circle {
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    transition: background-color 200ms ease-in-out;
+}
+
+.number {
+    font-family: sans-serif;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    bottom: 17px;
+    display: none;
+}
+
+.jan {
+    background-color: #006FC1;
+}
+
+.feb {
+    background-color: #006881;
+}
+
+.mar {
+    background-color: #385F02;
+}
+
+.apr {
+    background-color: #748A01;
+}
+
+.may {
+    background-color: #B1B403;
+}
+
+.jun {
+    background-color: #fab414;
+}
+
+.jul {
+    background-color: #FA9E0D;
+}
+
+.aug {
+    background-color: #FC7A02;
+}
+
+.sep {
+    background-color: #E81001;
+}
+
+.oct {
+    background-color: #B60300;
+}
+
+.nov {
+    background-color: #C00074;
+}
+
+.dec {
+    background-color: #6F3896;
+}
+
+.ml {
+    font-family: sans-serif;
+}
+
+#twitterml {
+    width: 32px;
+}
+
+.testbutton {
+    appearance: none;
+    margin: 0;
+    border: 3px solid white;
+    height: 46px;
+    width: 100%;
+    clip-path: polygon(85% 0%, 100% 50%, 85% 100%, 0% 100%, 15% 50%, 0% 0%);
+    transition: transform 200ms ease-in-out;
+}
+
+.testbutton:checked {
+    transform: scale(1.15);
+}
+
+.testbutton:checked + .circle_btn {
+    transform: scale(1.15);
+    background-color: white;
+    color: inherit;
+}
+
+.testbutton:hover, .testbutton:hover + .circle_btn {
+    cursor: pointer;
+    transform: scale(1.15); 
+}
+
+.testbutton:hover + .circle_btn {
+    background-color: white;
+}
+
+.flashtxt {
+    display: none;
+    transition: display 200ms ease-in-out;
+}
+
+.testbutton:hover + .label .flashtxt {
+    display: block;
+    animation-duration: 1s;
+    animation-name: numberflash_btn;
+    animation-iteration-count: infinite;
+}
+
+.testbutton:checked + .label .flashtxt {
+    display: block;
+    color: inherit;
+}
+
+.btn {
+    position: relative;
+}
+
+.circle_btn {
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 12px;
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+    margin-left: calc(50% - 12px);
+    margin-right: calc(50% - 12px);
+}
+
+.label {
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+
+.number_btn {
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    height: 12px;
+    position: absolute;
+    left: 0px;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+    bottom: 17px;
+    display: none;
+    color: rgba(0.1)
+}
+
+@keyframes numberflash_btn {
+    0% {color: transparent;}
+    20% {color: transparent;}
+    40% {color: inherit;}
+    80% {color: inherit;}
+    100% {color: transparent;}
+}
+
+.litxt{
+    position: relative;
+    font-weight: 600;
+}
+
+.leftlitxt {
+    position: absolute;
+    left: -570px;
+}
+
+#janli, #febli, #marli, #junli, #sepli, #octli, #novli {
+    position: absolute;
+    top: 80px;
+    width: 800px;
+    height: 0px;
+    background-color: white;
+    overflow: hidden;
+    transition: height 500ms ease-in-out;
+    text-align: left;
+}
+
+#jan:checked ~ #janli {
+    height: 315px;
+}
+
+#feb:checked ~ #febli {
+    height: 315px;
+}
+
+#mar:checked ~ #marli {
+    height: 315px;
+}
+
+#jun:checked ~ #junli {
+    height: 315px;
+}
+
+#sep:checked ~ #sepli {
+    height: 315px;
+}
+
+#oct:checked ~ #octli {
+    height: 315px;
+}
+
+#nov:checked ~ #novli {
+    height: 315px;
+}
+
+.datebutton {
+    appearance: none;
+    margin: 0;
+}
+
+.datelabel {
+    position: absolute;
+    left: 0px;
+    font-size: 16px;
+    transition: font-size 200ms ease-in-out;
+}
+
+.leftdatelabel {
+    margin-left: 570px;
+}
+
+.ytvideo {
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    transition: width 500ms ease-in-out;
+    overflow: hidden;
+}
+
+.leftytvideo {
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    transform-origin: 0 100%;
+    transition: width 500ms ease-in-out;
+    overflow: hidden;
+}
+
+.ndvideo {
+    width: 560px;
+    height: 315px;
+}
+
+.rightpos {
+    left: 150px;
+}
+
+.leftpos {
+    left: -570px;
+}
+
+.smrightpos {
+    left: 130px;
+}
+
+.datebutton:hover + .datelabel, .datebutton:hover + .leftdatelabel {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#date20150114:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20170112:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20120222:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20130214:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20140213:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20190213:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20210217:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20220209:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20160303:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20180308:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20120605:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20130611:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20140610:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20150616:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20160614:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20170613:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20180612:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20210615:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20190611:checked ~ .ytvideo {
+    width: 560px;
+}
+
+#date20120913:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20160901:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20170914:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20180914:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20190905:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20210924:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20220913:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20131001:checked ~ .leftytvideo {
+    width: 560px;
+}
+
+#date20151112:checked ~ .leftytvideo {
+    width: 560px;
+}

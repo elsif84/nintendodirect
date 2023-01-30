@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="img/Nintendo_Direct_logo.svg.png" alt="Logo Nintendo Direct" class="logo">
+        <p class="click">
+            <span class="clickline1">Cliquez sur un mois</span>
+            <span>pour afficher les dates des différentes conférences.</span>
+        </p>
+    </header>
+    <table>
+        <tr>
+            <th class="bottom"><span class="txtmonth jantxt">JAN</span></th>
+            <th class="bottom">
+                <p><span class="febtxt">PREMIER</span><br/><span class="sem">semestre</span></p>
+                <div class="infoline">
+                    <div class="right_febline"></div>
+                    <div class="left_febline"></div>
+                </div>
+            </th>
+            <th class="bottom"><span class="txtmonth martxt">MAR</span></th>
+            <th></th>
+            <th class="bottom"><span class="txtmonth maytxt">MAI</span></th>
+            <th class="bottom">
+                <p><span class="e3 juntxt">E3</span><br/><span class="sem">(mi-année)</span></p>
+                <div class="infoline">
+                    <div class="right_junline"></div>
+                    <div class="left_junline"></div>
+                </div>
+            </th>
+            <th></th>
+            <th class="bottom"><span class="txtmonth augtxt">AOÛT</span></th>
+            <th class="bottom">
+                <p><span class="septxt">SECOND</span><br/><span class="sem">semestre</span></p>
+                <div class="infoline">
+                    <div class="right_sepline"></div>
+                    <div class="left_sepline"></div>
+                </div>
+            </th>
+            <th class="bottom"><span class="txtmonth octtxt">OCT</span></th>
+            <th></th>
+            <th class="bottom"><span class="txtmonth dectxt">DÉC</span></th>
+        </tr>
+        <tr>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="jan" class="testbutton jan" value="jan">
+                    <label for="jan" class="label jantxt circle_btn"><div class="flashtxt">2</div></label>
+                    <ul class="jantxt litxt" id="janli">
+                        <li>
+                            <input type="radio" name="jandates" id="date20150114" class="datebutton" value="date20150114" controls>
+                            <label for="date20150114" class="datelabel">2015 : 14 janvier</label>
+                            <div class="rightpos ytvideo" id="ytvid20150114">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9jKpQKr1C9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jandates" id="date20170112" class="datebutton" value="date20170112" controls>
+                            <label for="date20170112" class="datelabel">2017 : 12 janvier</label>
+                            <div class="rightpos ytvideo" id="ytvid20170112">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/uuC4YLLkqME?start=1977" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="feb" class="testbutton feb" value="feb">
+                    <label for="feb" class="label febtxt circle_btn"><div class="flashtxt">6</div></label>
+                    <ul class="febtxt litxt" id="febli">
+                        <li>
+                            <input type="radio" name="febdates" id="date20120222" class="datebutton" value="date20120222" controls>
+                            <label for="date20120222" class="datelabel">2012 : 22 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20120222">
+                                <video class="ndvideo" src="https://s2.content.video.llnw.net/smedia/81d5fd2a308b4f5c981628b17e9fcadd/4U/zfMwrf6vBxyshQC1LYbnVKaSbbFfqdZ3AsFlLCnXw/eu_nintendo_direct_fr.mp4" controls></video>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="febdates" id="date20130214" class="datebutton" value="date20130214" controls>
+                            <label for="date20130214" class="datelabel">2013 : 14 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20130214">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rM7GAVM5Llo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="febdates" id="date20140213" class="datebutton" value="date20140213" controls>
+                            <label for="date20140213" class="datelabel">2014 : 13 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20140213">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kHGtCJmDi8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="febdates" id="date20190213" class="datebutton" value="date20190213" controls>
+                            <label for="date20190213" class="datelabel">2019 : 13 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20190213">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/cqHjNyeyBVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="febdates" id="date20210217" class="datebutton" value="date20210217" controls>
+                            <label for="date20210217" class="datelabel">2021 : 17 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20210217">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/F6aoLwAdHjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="febdates" id="date20220209" class="datebutton" value="date20220209" controls>
+                            <label for="date20220209" class="datelabel">2022 : 9 février</label>
+                            <div class="rightpos ytvideo" id="ytvid20220209">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5rwere2MPBI?start=1218" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="mar" class="testbutton mar" value="mar">
+                    <label for="mar" class="label martxt circle_btn"><div class="flashtxt">2</div></label>
+                    <ul class="martxt litxt" id="marli">
+                        <li>
+                            <input type="radio" name="mardates" id="date20160303" class="datebutton" value="date20160303" controls>
+                            <label for="date20160303" class="datelabel">2016 : 3 mars</label>
+                            <div class="smrightpos ytvideo" id="ytvid20160303">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?start=1218&amp;list=PLAIMaGSeGGkygQUd_zFsEsVr9oClxdbNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="mardates" id="date20180308" class="datebutton" value="date20180308" controls>
+                            <label for="date20180308" class="datelabel">2018 : 8 mars</label>
+                            <div class="smrightpos ytvideo" id="ytvid20180308">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rjoPJWWp4ew?start=1218" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="apr" class="testbutton apr" value="apr">
+                    <label for="apr" class="label aprtxt circle_btn"><div class="flashtxt"></div></label>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="may" class="testbutton may" value="may">
+                    <label for="may" class="label maytxt circle_btn"><div class="flashtxt"></div></label>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="jun" class="testbutton jun" value="jun">
+                    <label for="jun" class="label juntxt circle_btn"><div class="flashtxt">9</div></label>
+                    <ul class="juntxt litxt" id="junli">
+                        <li>
+                            <input type="radio" name="jundates" id="date20120605" class="datebutton" value="date20120605" controls>
+                            <label for="date20120605" class="datelabel">2012 : 5 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20120605">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/e1dUDq74cHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20130611" class="datebutton" value="date20130611" controls>
+                            <label for="date20130611" class="datelabel">2013 : 11 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20130611">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jrMB4hO603M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20140610" class="datebutton" value="date20140610" controls>
+                            <label for="date20140610" class="datelabel">2014 : 10 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20140610">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/kMuuhapJtLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20150616" class="datebutton" value="date20150616" controls>
+                            <label for="date20150616" class="datelabel">2015 : 16 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20150616">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gjh2Xf0CYQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20160614" class="datebutton" value="date20160614" controls>
+                            <label for="date20160614" class="datelabel">2016 : 14 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20160614">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/19B4wloShy0?start=245" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20170613" class="datebutton" value="date20170613" controls>
+                            <label for="date20170613" class="datelabel">2017 : 13 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20170613">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z-g7lXaymA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20180612" class="datebutton" value="date20180612" controls>
+                            <label for="date20180612" class="datelabel">2018 : 12 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20180612">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?start=245&amp;list=PLAIMaGSeGGkx-fPgiIYxSxnLMYRthJdZ2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20190611" class="datebutton" value="date20190611" controls>
+                            <label for="date20190611" class="datelabel">2019 : 11 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20190611">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IcCWM7w8rp0?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="jundates" id="date20210615" class="datebutton" value="date20210615" controls>
+                            <label for="date20210615" class="datelabel">2021 : 15 juin</label>
+                            <div class="smrightpos ytvideo" id="ytvid20210615">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3DpHdiABQso?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="jul" class="testbutton jul" value="jul">
+                    <label for="jul" class="label jultxt circle_btn"><div class="flashtxt"></div></label>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="aug" class="testbutton aug" value="aug">
+                    <label for="aug" class="label augtxt circle_btn"><div class="flashtxt"></div></label>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="sep" class="testbutton sep" value="sep">
+                    <label for="sep" class="label septxt circle_btn"><div class="flashtxt">7</div></label>
+                    <ul class="septxt leftlitxt" id="sepli">
+                        <li>
+                            <input type="radio" name="sepdates" id="date20120913" class="datebutton" value="date20120913" controls>
+                            <label for="date20120913" class="leftdatelabel">2012 : 13 septembre</label>
+                            <div class="leftytvideo" id="ytvid20120913">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/OpQyHVy4dJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20160901" class="datebutton" value="date20160901" controls>
+                            <label for="date20160901" class="leftdatelabel">2016 : 1<sup>er</sup> septembre</label>
+                            <div class="leftytvideo" id="ytvid20160901">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/jos5QgGpUVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20170914" class="datebutton" value="date20170914" controls>
+                                <label for="date20170914" class="leftdatelabel">2017 : 14 septembre</label>
+                                <div class="leftytvideo" id="ytvid20170914">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W1-6YRIneZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20180914" class="datebutton" value="date20180914" controls>
+                            <label for="date20180914" class="leftdatelabel">2018 : 14 septembre</label>
+                            <div class="leftytvideo" id="ytvid20180914">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/M7O71PT-ZRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20190905" class="datebutton" value="date20190905" controls>
+                            <label for="date20190905" class="leftdatelabel">2019 : 5 septembre</label>
+                            <div class="leftytvideo" id="ytvid20190905">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rYS_Tqf3t9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20210924" class="datebutton" value="date20210924" controls>
+                            <label for="date20210924" class="leftdatelabel">2021 : 24 septembre</label>
+                            <div class="leftytvideo" id="ytvid20210924">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/P9ZakvGwBMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="radio" name="sepdates" id="date20220913" class="datebutton" value="date20220913" controls>
+                            <label for="date20220913" class="leftdatelabel">2022 : 13 septembre</label>
+                            <div class="leftytvideo" id="ytvid20220913">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aYebvfTqdHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="oct" class="testbutton oct" value="oct">
+                    <label for="oct" class="label octtxt circle_btn"><div class="flashtxt">1</div></label>
+                    <ul class="octtxt leftlitxt" id="octli">
+                        <li>
+                            <input type="radio" name="octdates" id="date20131001" class="datebutton" value="date20131001" controls>
+                            <label for="date20131001" class="leftdatelabel">2013 : 1<sup>er</sup> octobre</label>
+                            <div class="leftytvideo" id="ytvid20131001">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/cehNhVMzg5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="nov" class="testbutton nov" value="nov">
+                    <label for="nov" class="label novtxt circle_btn"><div class="flashtxt">1</div></label>
+                    <ul class="novtxt leftlitxt" id="novli">
+                        <li>
+                            <input type="radio" name="novdates" id="date20151112" class="datebutton" value="date20151112" controls>
+                            <label for="date20151112" class="leftdatelabel">2015 : 12 novembre</label>
+                            <div class="leftytvideo" id="ytvid20151112">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/tI1jm3_7f90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </th>
+            <th>
+                <div class="btn">
+                    <input type="radio" name="frieze" id="dec" class="testbutton dec" value="dec">
+                    <label for="dec" class="label dectxt circle_btn"><div class="flashtxt"></div></label>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><span class="txtmonth febtxt">FÉV</span></th>
+            <th></th>
+            <th><span class="txtmonth aprtxt">AVR</span></th>
+            <th></th>
+            <th><span class="txtmonth juntxt">JUIN</span></th>
+            <th><span class="txtmonth jultxt">JUIL</span></th>
+            <th></th>
+            <th><span class="txtmonth septxt">SEP</span></th>
+            <th></th>
+            <th><span class="txtmonth novtxt">NOV</span></th>
+            <th></th>
+        </tr>
+    </table>
+    <footer>
+        <p class="ml"><strong>Direction artistique : NoaXyn <a href="https://twitter.com/noaxyn"><img src="img/Twitter_social_icons_rounded_square_blue.svg" alt="Logo Twitter" id="twitterml"></a></strong></p>
+        <p class="ml">Ce site ne répertorie que les Nintendo Direct <strong>généraux</strong>. Les Nintendo Direct mini, Partner Showcase et Indie World n'y figurent pas.</p>
+        <p class="ml">Le logo Nintendo Direct, les termes Nintendo Direct, Nintendo Direct Mini, Partner Showcase et Indie World appartiennent à la marque Nintendo.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
