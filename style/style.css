@@ -16,7 +16,7 @@ p {
 
 table{
     margin-top: 22vh;
-    margin-bottom: 320px;
+    margin-bottom: 330px;
     width: 100%;
     border-collapse: collapse;
     position: relative;
@@ -415,7 +415,7 @@ footer {
     left: -570px;
 }
 
-#janli, #febli, #marli, #junli, #sepli, #octli, #novli {
+#janli, #febli, #marli, #aprli, #mayli, #junli, #augli, #sepli, #octli, #novli {
     position: absolute;
     top: 80px;
     width: 800px;
@@ -426,33 +426,22 @@ footer {
     text-align: left;
 }
 
-#jan:checked ~ #janli {
-    height: 315px;
-}
+/* Ouverture des listes de dates en cliquant sur les chevrons */
 
-#feb:checked ~ #febli {
-    height: 315px;
-}
-
-#mar:checked ~ #marli {
-    height: 315px;
-}
-
-#jun:checked ~ #junli {
-    height: 315px;
-}
-
-#sep:checked ~ #sepli {
-    height: 315px;
-}
-
-#oct:checked ~ #octli {
-    height: 315px;
-}
-
+#jan:checked ~ #janli,
+#feb:checked ~ #febli,
+#mar:checked ~ #marli,
+#apr:checked ~ #aprli,
+#may:checked ~ #mayli,
+#jun:checked ~ #junli,
+#aug:checked ~ #augli,
+#sep:checked ~ #sepli,
+#oct:checked ~ #octli,
 #nov:checked ~ #novli {
     height: 315px;
 }
+
+/* ---------------------------------------------------------- */
 
 .datebutton {
     appearance: none;
@@ -509,114 +498,46 @@ footer {
     cursor: pointer;
 }
 
-#date20150114:checked ~ .ytvideo {
-    width: 560px;
-}
+/* Ouverture des vidéos en cliquant sur les dates */
 
-#date20170112:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20120222:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20130214:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20140213:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20190213:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20210217:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20220209:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20160303:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20180308:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20120605:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20130611:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20140610:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20150616:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20160614:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20170613:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20180612:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20210615:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20190611:checked ~ .ytvideo {
-    width: 560px;
-}
-
-#date20120913:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20160901:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20170914:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20180914:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20190905:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20210924:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20220913:checked ~ .leftytvideo {
-    width: 560px;
-}
-
-#date20131001:checked ~ .leftytvideo {
-    width: 560px;
-}
-
+#date20150114:checked ~ .ytvideo,
+#date20170112:checked ~ .ytvideo,
+#date20120222:checked ~ .ytvideo,
+#date20130214:checked ~ .ytvideo,
+#date20140213:checked ~ .ytvideo,
+#date20190213:checked ~ .ytvideo,
+#date20210217:checked ~ .ytvideo,
+#date20220209:checked ~ .ytvideo,
+#date20160303:checked ~ .ytvideo,
+#date20180308:checked ~ .ytvideo,
+#date20120421:checked ~ .ytvideo,
+#date20130517:checked ~ .ytvideo,
+#date20120605:checked ~ .ytvideo,
+#date20130611:checked ~ .ytvideo,
+#date20140610:checked ~ .ytvideo,
+#date20150616:checked ~ .ytvideo,
+#date20160614:checked ~ .ytvideo,
+#date20170613:checked ~ .ytvideo,
+#date20180612:checked ~ .ytvideo,
+#date20210615:checked ~ .ytvideo,
+#date20190611:checked ~ .ytvideo,
+#date20130807:checked ~ .leftytvideo,
+#date20120913:checked ~ .leftytvideo,
+#date20160901:checked ~ .leftytvideo,
+#date20170914:checked ~ .leftytvideo,
+#date20180914:checked ~ .leftytvideo,
+#date20190905:checked ~ .leftytvideo,
+#date20210924:checked ~ .leftytvideo,
+#date20220913:checked ~ .leftytvideo,
+#date20121004:checked ~ .leftytvideo,
+#date20131001:checked ~ .leftytvideo,
+#date20131113:checked ~ .leftytvideo
 #date20151112:checked ~ .leftytvideo {
     width: 560px;
+}
+
+/* ---------------------------------------------- */
+
+.summary {
+    margin-bottom: 10px;
 }
