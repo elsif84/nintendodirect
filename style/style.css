@@ -531,7 +531,7 @@ footer {
 #date20220913:checked ~ .leftytvideo,
 #date20121004:checked ~ .leftytvideo,
 #date20131001:checked ~ .leftytvideo,
-#date20131113:checked ~ .leftytvideo
+#date20131113:checked ~ .leftytvideo,
 #date20151112:checked ~ .leftytvideo {
     width: 560px;
 }
