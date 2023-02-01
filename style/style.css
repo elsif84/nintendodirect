@@ -472,6 +472,8 @@ footer {
 #date20160303:checked ~ .ytvideo,
 #date20180308:checked ~ .ytvideo,
 #date20120421:checked ~ .ytvideo,
+#date20150402:checked ~ .ytvideo,
+#date20170413:checked ~ .ytvideo,
 #date20130517:checked ~ .ytvideo,
 #date20120605:checked ~ .ytvideo,
 #date20130611:checked ~ .ytvideo,
@@ -493,6 +495,7 @@ footer {
 #date20121004:checked ~ .leftytvideo,
 #date20131001:checked ~ .leftytvideo,
 #date20131113:checked ~ .leftytvideo,
+#date20141105:checked ~ .leftytvideo,
 #date20151112:checked ~ .leftytvideo,
 #date20131218:checked ~ .leftytvideo {
     width: 560px;
