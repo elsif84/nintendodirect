@@ -147,10 +147,6 @@ footer {
     cursor: pointer;
 }
 
-.arrow_hover_js {
-    transform: scale(1.2);
-}
-
 .arrow:hover .circle {
     background-color: white;
 }
@@ -469,6 +465,7 @@ footer {
 #date20190213:checked ~ .ytvideo,
 #date20210217:checked ~ .ytvideo,
 #date20220209:checked ~ .ytvideo,
+#date20230208:checked ~ .ytvideo,
 #date20160303:checked ~ .ytvideo,
 #date20180308:checked ~ .ytvideo,
 #date20120421:checked ~ .ytvideo,
