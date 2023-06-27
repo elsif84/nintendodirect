@@ -1,0 +1,320 @@
+* {
+    font-family: arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, footer {
+    border: 1px solid black;
+    min-height: 50px;
+}
+
+header {
+    display: flex;
+}
+
+footer {
+    justify-content: end;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.logo {
+    width: 30%;
+    height: 50px;
+    border: 1px solid red;
+}
+
+.click {
+    width: 70%;
+    border: 1px solid blue;
+}
+
+.playvid {
+    background: green;
+    color: white;
+    font-family: sans-serif;
+}
+
+.playvid:hover {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+.radiolist {
+    display: flex;
+}
+
+.radiocheck {
+    width: 16px;
+    height: 16px;
+    background: blue;
+}
+
+.radiocheck:hover {
+    background: lightblue;
+}
+
+.selected {
+    background: lightcoral;
+}
+
+.frieze{
+    border: 1px solid orange;
+    display: flex;
+}
+
+.month {
+    border: 1px solid purple;
+    width: 8.3%;
+    transition: margin 200ms ease-in-out;
+}
+
+.monthtxt {
+    font-size: 26px;
+}
+
+.monthtxtup, .monthtxtbottom {
+    text-align: center;
+    min-height: 30px;
+}
+
+.monthtxtup {
+    border: 1px solid green;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.sem {
+    color: grey;
+}
+
+.infoline{
+    display: flex;
+}
+
+.left_febline{
+    border-left: 1px solid #006881;
+    border-top: 2px solid #006881;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_febline{
+    border-right: 1px solid #006881;
+    border-top: 2px solid #006881;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.left_junline{
+    border-left: 1px solid #fab414;
+    border-top: 2px solid #fab414;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_junline{
+    border-right: 1px solid #fab414;
+    border-top: 2px solid #fab414;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.left_sepline{
+    border-left: 1px solid #E81001;
+    border-top: 2px solid #E81001;
+    width: 50%;
+    height: 40px;
+    margin-right: 20%;
+    margin-top: 6px;
+}
+
+.right_sepline{
+    border-right: 1px solid #E81001;
+    border-top: 2px solid #E81001;
+    width: 50%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 6px;
+}
+
+.e3infoline {
+    width: 48px;
+}
+
+.arrow {
+    height: 40px;
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+}
+
+.arrowtxt {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.e3wht {
+    height: 16px;
+}
+
+.circle {
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    transition: background-color 200ms ease-in-out;
+}
+
+@media screen and (min-width: 1080px) {
+    
+    .arrow_on,
+    .arrow_hover {
+        transform: scale(1.2);
+    }
+
+    .arrowtxt, .arrow_mob {
+        display: none;
+    }
+    
+    .month_on,
+    .month_hover {
+        margin: 0 0.5%;
+    }
+
+}
+
+.monthtxtbottom {
+    border: 1px solid teal;
+}
+
+@media screen and (max-width: 1079px) {
+
+    .frieze {
+        flex-flow: row wrap;
+    }    
+
+    .month {
+        width: 24.8%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .monthtxtup, .monthtxtbottom {
+        display: none;
+    }
+
+    .arrow, .startarrow, .endarrow {
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .arrow_mob {
+        width: 75%;
+    }
+
+    .sem {
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .arrow, .startarrow, .endarrow {
+        clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    }
+}
+
+@media screen and (max-width: 719px) {
+
+    .month {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079px) {
+    .endarrow {
+        clip-path: polygon(100% 0%, 100% 100%, 0 100%, 10% 50%, 0% 0%);
+    }
+
+    .startarrow {
+        clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);
+    }
+}
+
+/* Couleurs de fond en fonction des mois */
+
+.jan { background-color: #006FC1; }
+
+.feb { background-color: #006881; }
+
+.mar { background-color: #385F02; }
+
+.apr { background-color: #748A01; }
+
+.may { background-color: #B1B403; }
+
+.jun { background-color: #fab414; }
+
+.jul { background-color: #FA9E0D; }
+
+.aug { background-color: #FC7A02; }
+
+.sep { background-color: #E81001; }
+
+.oct { background-color: #B60300; }
+
+.nov { background-color: #C00074; }
+
+.dec { background-color: #6F3896; }
+
+/* ------------------------------------- */
+
+/* Couleurs des textes en fonction des mois */
+
+.jantxt { color: #006FC1; }
+
+.febtxt { color: #006881; }
+
+.martxt { color: #385F02; }
+
+.aprtxt { color: #748A01; }
+
+.maytxt { color: #B1B403; }
+
+.juntxt { color: #fab414; }
+
+.jultxt { color: #FA9E0D; }
+
+.augtxt { color: #FC7A02; }
+
+.septxt { color: #E81001; }
+
+.octtxt { color: #B60300; }
+
+.novtxt { color: #C00074; }
+
+.dectxt { color: #6F3896; }
+
+/* ---------------------------------------- */
